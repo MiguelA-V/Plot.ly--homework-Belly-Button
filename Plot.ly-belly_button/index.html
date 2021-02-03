@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belly Button Bio Diversity</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class = "col-md-12 jumbotron text-center">
+            <h1 style = "font-family:Arial, Helvetica, sans-serif,;color: #5207b6">Belly Button Biodiversity Dashboard</h1>
+            <p style = "font-family:Arial, Helvetica, sans-serif;color: #6fc024; font-size: 30px;">Use the interactive charts below to explore the dataset</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h4 style = "font-family:Arial, Georgia, 'Times New Roman', Times, serif, sans-serif;color: black">Test Subject ID Number</h4>
+              <span title = "If You Dare!">Take a Peek!</span>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Demographic Info</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="bar"></div>
+          </div>
+          <div class="col-md-5">
+            <div id="gauge"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="bubble"></div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="app.js"></script>
+      <script src="gauge.js"></script>
+      <!-- <script src="./static/js/bonus.js"></script> -->
+      <script src="samples.json"></script>
+</body>
+</html>
